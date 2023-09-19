@@ -1,0 +1,16 @@
+.row{
+    padding: 2.5%;
+}
+
+.title, .desc{
+    text-align: center;
+}
+
+.heading{
+    font-size: 0.5rem;
+    font-weight: 800;
+}
+
+.delete p{
+    cursor: pointer;
+}

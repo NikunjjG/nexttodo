@@ -1,0 +1,41 @@
+*{
+    font-size: 16px;
+}
+
+.form{
+    padding: 2.5%;
+}
+
+.input-form{
+    gap: 0.5rem;
+}
+
+form{
+    gap: 1rem;
+}
+
+.input-form button{
+    padding: 0.4rem 0.7rem;
+    background-color: #000000;
+    color: white;
+}
+
+.input-form input{
+    height: 2rem;
+    font-size: 1rem;
+}
+
+.input-form p{
+    font-size: 1
+    em;
+}
+
+@media screen and (max-width: 600px) {
+    *{
+        font-size: 13px;
+    }
+    
+    form{
+        flex-direction: column;
+    }
+}
