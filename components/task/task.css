@@ -14,3 +14,11 @@
 .delete p{
     cursor: pointer;
 }
+
+hr{
+    margin: 3.5% 3.5% 3.5% 0;
+}
+
+.tsks{
+    margin: -2.5%;
+}

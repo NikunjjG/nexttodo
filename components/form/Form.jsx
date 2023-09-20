@@ -23,6 +23,12 @@ const Form = () => {
     setDesc("")
   }
 
+  const deleteHandler = (index) => {
+    let copyTasks = [...tasks];
+    copyTasks.splice(index, 1)
+    setTasks(copyTasks)
+}
+
   return (
     <div className={poppins.className}>
       <div className="form">
@@ -48,7 +54,7 @@ const Form = () => {
         <hr />
         {
           tasks.map((t, i) => (
-            <Task key={i} index={i + 1} title={t.title} desc={t.desc} />
+            <Task key={i} index={i + 1} title={t.title} desc={t.desc} list={tasks} deleteHandler={deleteHandler} className = "tsks"/>
           ))
         }
       </div>

@@ -2,6 +2,8 @@ import React from 'react'
 import './task.css'
 
 const Task = (props) => {
+    console.log(props)
+    
   return (
     <div className='row df jcsb flw'>
         <div className="serial">
@@ -16,7 +18,7 @@ const Task = (props) => {
             <div className="heading-content">{props.desc}</div>
         </div>
         <div className="delete">
-            <p>🗑️</p>
+            <p onClick={()=>{props.deleteHandler(props.index-1)}}>🗑️</p>
         </div>
     </div>
   )
